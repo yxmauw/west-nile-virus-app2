@@ -166,7 +166,7 @@ fig2 = px.scatter_mapbox(
     lon="Longitude",
     size="NumMosquitos",
     color="WnvPresent",
-    animation_frame='Date',
+    animation_frame='Year',
     color_continuous_scale=px.colors.sequential.Viridis,
     zoom=9,
 )
