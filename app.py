@@ -155,7 +155,7 @@ spray_loc = px.scatter_mapbox(
     zoom=9,
     color_discrete_sequence=["palegreen"],
     opacity=0.5,
-    animation_frame='Day',
+    animation_frame='Year',
     width=1000,
     height=900,
 )
@@ -166,6 +166,7 @@ fig2 = px.scatter_mapbox(
     lon="Longitude",
     size="NumMosquitos",
     color="WnvPresent",
+    animation_frame='Date',
     color_continuous_scale=px.colors.sequential.Viridis,
     zoom=9,
 )
