@@ -161,7 +161,7 @@ spray_loc = px.scatter_mapbox(
 )
 
 fig2 = px.scatter_mapbox(
-    overall_add,
+    overall_date,
     lat="Latitude",
     lon="Longitude",
     size="NumMosquitos",
