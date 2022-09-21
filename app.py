@@ -147,7 +147,6 @@ overall_add = (
 df_spray_copy = df_spray.reset_index().copy()
 df_spray_copy = date_add(df_spray_copy)
 df_spray1 = df[1]
-df_spray1["Date"] = pd.to_datetime(df_spray1["Date"])
 
 spray_loc = px.scatter_mapbox(
     df_spray1,
