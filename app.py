@@ -155,7 +155,7 @@ spray_loc = px.scatter_mapbox(
     zoom=9,
     color_discrete_sequence=["palegreen"],
     opacity=0.5,
-    animation_frame="Date",
+    animation_frame="Year",
     width=1000,
     height=900,
 )
