@@ -148,14 +148,14 @@ df_spray_copy = df_spray.reset_index().copy()
 df_spray_copy = date_add(df_spray_copy)
 
 spray_loc = px.scatter_mapbox(
-    df_spray_copy,
+    df_spray,
     lat="Latitude",
     lon="Longitude",
     size_max=15,
     zoom=9,
     color_discrete_sequence=["palegreen"],
     opacity=0.5,
-    animation_frame="Year",
+    animation_frame="Date",
     width=1000,
     height=900,
 )
