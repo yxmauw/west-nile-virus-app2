@@ -146,16 +146,17 @@ overall_add = (
 
 df_spray_copy = df_spray.reset_index().copy()
 df_spray_copy = date_add(df_spray_copy)
+df_spray1 = df_spray.reset_index()
 
 spray_loc = px.scatter_mapbox(
-    df_spray,
+    df_spray1,
     lat="Latitude",
     lon="Longitude",
     size_max=15,
     zoom=9,
     color_discrete_sequence=["palegreen"],
     opacity=0.5,
-    animation_frame=df_spray.reset_index()['Date'],
+    animation_frame='Date',
     width=1000,
     height=900,
 )
